@@ -40,3 +40,5 @@ You set url, where locate json file OR set path for scan
         ]
         ...
     ],```
+
+Now you open yourdomain.com/swagger and see API documentation
