@@ -1,7 +1,7 @@
 Yii2 Swagger Module
 ============
 
-This module integrate [swagger-php](https://github.com/zircote/swagger-php) and [swagger-ui](https://github.com/swagger-api/swagger-ui).
+This module integrate [swagger-php](https://github.com/zircote/swagger-php) and [swagger-ui v3](https://github.com/swagger-api/swagger-ui).
 
 Installation
 ------------
