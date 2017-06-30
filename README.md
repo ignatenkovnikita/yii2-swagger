@@ -46,6 +46,14 @@ You set url, where locate json file OR set path for scan
             'path' => '@frontend/modules/api'
         ]
         ...
-    ],```
+    ],
+    ```
+
 
 Now you open yourdomain.com/swagger and see API documentation
+
+
+### TODO
+- add cache
+- add security for page
+- add customization
