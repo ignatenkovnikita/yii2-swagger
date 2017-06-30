@@ -33,7 +33,7 @@ You set url, where locate json file OR set path for scan
 ```php
 'modules' => [
       ...
-        'swagger1' => [
+        'swagger' => [
             'class' => \ignatenkovnikita\swagger\Module::class,
             //'url' => '/api/swagger/swagger.yaml',
             'path' => '@frontend/modules/api'
