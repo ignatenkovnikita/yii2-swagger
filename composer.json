@@ -1,0 +1,24 @@
+{
+  "name": "ignatenkovnikita/yii2-swagger",
+  "description": "Swagger UI v3 intergation with yii2",
+  "type": "library",
+  "keywords": ["yii2","extension","swagger","Restful","document", "api"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ignatenkov Nikita",
+      "email": "ignatenkov.n@gmail.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "^2.0.0",
+    "zircote/swagger-php": "^2.0",
+    "bower-asset/swagger-ui": "3.0.17"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "ignatenkovnikita\\swagger\\": "src"
+    }
+  }
+}
