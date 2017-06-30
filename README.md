@@ -47,7 +47,7 @@ You set url, where locate json file OR set path for scan
         ]
         ...
     ],
-    ```
+```
 
 
 Now you open yourdomain.com/swagger and see API documentation
@@ -57,3 +57,7 @@ Now you open yourdomain.com/swagger and see API documentation
 - add cache
 - add security for page
 - add customization
+
+
+## Donate
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](g.kiting@gmail.com)
