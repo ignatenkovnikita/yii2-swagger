@@ -1,11 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ignatenkovnikita
- * Web Site: http://IgnatenkovNikita.ru
- */
-
-namespace ignatenkovnikita\swagger;
+namespace ignatenkovnikita\swagger\assets;
 
 
 use yii\web\AssetBundle;
@@ -13,6 +7,8 @@ use yii\web\View;
 
 class SwaggerAsset extends AssetBundle
 {
+//    public $sourcePath = '@vendor/theme/sdrugom';
+
     public $sourcePath = '@bower/swagger-ui/dist';
 
     public $js = [
