@@ -60,4 +60,5 @@ Now you open yourdomain.com/swagger and see API documentation
 
 
 ## Donate
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](g.kiting@gmail.com)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://paypal.me/ignatenkovnikita)
