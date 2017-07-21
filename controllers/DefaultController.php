@@ -30,8 +30,9 @@ class DefaultController extends Controller
     {
         $path = \Yii::getAlias($this->module->path);
         $swagger = \Swagger\scan($path);
+
         \Yii::$app->response->format = Response::FORMAT_JSON;
-        return $swagger;
+        echo $swagger;
     }
 
 
