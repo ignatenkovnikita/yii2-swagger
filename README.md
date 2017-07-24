@@ -57,6 +57,7 @@ Now you open yourdomain.com/swagger and see API documentation
 - add cache
 - add security for page
 - add customization
+- add callback (before generate replace domen and other setting)
 
 
 ## Donate
