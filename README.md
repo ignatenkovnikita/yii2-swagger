@@ -18,13 +18,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist ignatenkovnikita/yii2-swagger "*"
+php composer.phar require ignatenkovnikita/yii2-swagger:dev-master
 ```
 
 or add
 
 ```
-"ignatenkovnikita/yii2-swagger": "*"
+"ignatenkovnikita/yii2-swagger": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -40,11 +40,20 @@ You set url, where locate json file OR set path for scan
 ```php
 'modules' => [
       ...
-        'swagger' => [
+      'swagger' => [
             'class' => \ignatenkovnikita\swagger\Module::class,
-            //'url' => '/api/swagger/swagger.yaml',
-            'path' => '@frontend/modules/api'
-        ]
+        //  'url' => 'http://petstore.swagger.io/v2/swagger.json',
+            'path' => '@frontend/modules/api',
+            'isDisable' => function () {
+                return false;
+            },
+            // replace placeholders in swagger content
+            'afterRender' => function ($content) {
+                $content = str_replace('{{host}}', 'http://example.com', $content);
+                $content = str_replace('{{basePath}}', '/api/v1', $content);
+                return $content;
+            }
+       ]
         ...
     ],
 ```

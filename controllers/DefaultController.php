@@ -12,28 +12,52 @@ use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\Response;
 
+/**
+ * Class DefaultController
+ * @package ignatenkovnikita\swagger\controllers
+ */
 class DefaultController extends Controller
 {
 
+    /**
+     * @return string
+     */
     public function actionIndex()
     {
-
-//        $this->module->url;
         $this->layout = '_clear';
-        $url = '/api/swagger/swagger.yaml';
         return $this->render('index', [
-            'url' => $this->module->url ? $this->module->url : Url::to(['default/json'])
+            'url' => Url::to(['default/json'], true)
         ]);
     }
 
+    /**
+     *
+     */
     public function actionJson()
     {
-        $path = \Yii::getAlias($this->module->path);
-        $swagger = \Swagger\scan($path);
-
         \Yii::$app->response->format = Response::FORMAT_JSON;
-        echo $swagger;
+        echo $this->getContent();
     }
 
+
+    public function getContent()
+    {
+        $content = '';
+        if ($this->module->path) {
+            $path = \Yii::getAlias($this->module->path);
+            $content = \Swagger\scan($path);
+        }
+        if ($this->module->url) {
+            $content = file_get_contents($this->module->url);
+        }
+
+
+        if (is_callable($this->module->afterRender)) {
+            $content = call_user_func($this->module->afterRender, $content);
+        }
+
+
+        return $content;
+    }
 
 }
