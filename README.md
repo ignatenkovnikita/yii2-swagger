@@ -5,7 +5,10 @@ This module integrate [swagger-php](https://github.com/zircote/swagger-php) and 
 
 
 
-[![Latest Stable Version](https://poser.pugx.org/ignatenkovnikita/yii2-swagger/v/stable)](https://packagist.org/packages/ignatenkovnikita/yii2-swagger) [![Total Downloads](https://poser.pugx.org/ignatenkovnikita/yii2-swagger/downloads)](https://packagist.org/packages/ignatenkovnikita/yii2-swagger) [![Latest Unstable Version](https://poser.pugx.org/ignatenkovnikita/yii2-swagger/v/unstable)](https://packagist.org/packages/ignatenkovnikita/yii2-swagger) [![License](https://poser.pugx.org/sevenfloor/yii2-sendpulse/license)](https://packagist.org/packages/ignatenkovnikita/yii2-swagger)
+[![Latest Stable Version](https://poser.pugx.org/ignatenkovnikita/yii2-swagger/v/stable)](https://packagist.org/packages/ignatenkovnikita/yii2-swagger) 
+[![Total Downloads](https://poser.pugx.org/ignatenkovnikita/yii2-swagger/downloads)](https://packagist.org/packages/ignatenkovnikita/yii2-swagger) 
+[![Latest Unstable Version](https://poser.pugx.org/ignatenkovnikita/yii2-swagger/v/unstable)](https://packagist.org/packages/ignatenkovnikita/yii2-swagger) 
+[![License](https://poser.pugx.org/ignatenkovnikita/yii2-sendpulse/license)](https://packagist.org/packages/ignatenkovnikita/yii2-swagger)
 
 
 
