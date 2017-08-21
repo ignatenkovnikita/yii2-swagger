@@ -47,6 +47,7 @@ You set url, where locate json file OR set path for scan
             'class' => \ignatenkovnikita\swagger\Module::class,
         //  'url' => 'http://petstore.swagger.io/v2/swagger.json',
             'path' => '@frontend/modules/api',
+            // disable page with your logic
             'isDisable' => function () {
                 return false;
             },
@@ -67,9 +68,7 @@ Now you open yourdomain.com/swagger and see API documentation
 
 ### TODO
 - add cache
-- add security for page
 - add customization
-- add callback (before generate replace domen and other setting)
 
 
 ## Donate
