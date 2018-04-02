@@ -35,8 +35,7 @@ class DefaultController extends Controller
      */
     public function actionJson()
     {
-        \Yii::$app->response->format = Response::FORMAT_JSON;
-        echo $this->getContent();
+        return $this->getContent();
     }
 
 
