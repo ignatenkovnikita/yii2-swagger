@@ -65,6 +65,38 @@ You set url, where locate json file OR set path for scan
 
 Now you open yourdomain.com/swagger and see API documentation
 
+Example 
+```php
+/**
+ * Class Module Api
+ *
+ *
+ * @SWG\Swagger(
+ *     basePath="{{basePath}}",
+ *     host="{{host}}",
+ *     schemes={"http"},
+ *     @SWG\Info(
+ *         version="1.0",
+ *         title="Example API",
+ *         @SWG\Contact(name="Example", url="http://example.ru"),
+ *     ),
+ *     @SWG\Definition(
+ *         definition="Error",
+ *         required={"code", "message"},
+ *         @SWG\Property(
+ *             property="code",
+ *             type="integer",
+ *             format="int32"
+ *         ),
+ *         @SWG\Property(
+ *             property="message",
+ *             type="string"
+ *         )
+ *     )
+ * )
+ */
+```
+
 
 ### TODO
 - add cache
