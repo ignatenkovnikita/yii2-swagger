@@ -65,7 +65,7 @@ You set url, where locate json file OR set path for scan
 
 Now you open yourdomain.com/swagger and see API documentation
 
-Example 
+Example Module
 ```php
 /**
  * Class Module Api
@@ -93,6 +93,65 @@ Example
  *             type="string"
  *         )
  *     )
+ * )
+ */
+```
+
+Example controller
+```php
+/**
+     * @SWG\Post(
+     *    path = "/user-device/register",
+     *    tags = {"user-device"},
+     *    operationId = "userDevice",
+     *    summary = "Регистрация устройства",
+     *    description = "Регистрация устройства",
+     *    produces = {"application/json"},
+     *    consumes = {"application/json"},
+     *	@SWG\Parameter(
+     *        in = "body",
+     *        name = "body",
+     *        description = "Тело запроса",
+     *        required = true,
+     *        type = "string",
+     *      @SWG\Schema(ref = "#/definitions/UserDeviceForm")
+     *    ),
+     *	@SWG\Response(response = 200, description = "success")
+     *)
+     * @throws HttpException
+     */
+```
+
+Example form
+```php
+/**
+ * @SWG\Definition(
+ *      definition="UserDeviceForm",
+ *      required={"uuid", "token", "os", "json"},
+ *      @SWG\Property(
+ *          property="uuid",
+ *          type="string",
+ *          description="UUID устройства",
+ *          example="e3243"
+ *      ),
+ *      @SWG\Property(
+ *          property="token",
+ *          type="string",
+ *          description="token для Google Fire Base",
+ *          example="e3243"
+ *      ),
+ *      @SWG\Property(
+ *          property="os",
+ *          type="string",
+ *          description="os устройства android|ios",
+ *          example="ios"
+ *      ),
+ *      @SWG\Property(
+ *          property="json",
+ *          type="string",
+ *          description="json достпные параметры устройства, название модели, версия ОС и др",
+ *          example=""
+ *      )
  * )
  */
 ```
